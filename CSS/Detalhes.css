@@ -1,0 +1,95 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: url('https://images4.alphacoders.com/814/81446.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    color: white;
+}
+
+.no-details-message {
+    display: none;
+}
+
+.container {
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgba(7, 7, 7, 0.938);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgb(255 255 255 / 36%);
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    color: aquamarine;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+}
+
+#moviePoster {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.plot {
+    color: rgb(250, 250, 182);
+    font-size: 18px;
+}
+
+.details {
+    flex: 1;
+}
+
+#btnVoltar {
+    padding: 10px 15px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(22, 22, 22);
+    color: aquamarine;
+    transition: background-color 0.3s;
+}
+
+#btnVoltar:hover {
+    background-color: gray;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .plot {
+        font-size: 16px;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #moviePoster {
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+}

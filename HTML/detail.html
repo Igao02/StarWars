@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100&family=Hind+Siliguri:wght@300;400&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:wght@100;300;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/Detalhes.css">
+    <title>Detalhes do Filme</title>
+</head>
+
+<body>
+    <h1 id="movieTitle"></h1>
+    <section class="container">
+
+        <div class="content-wrapper">
+            <img id="moviePoster" alt="poster" />
+
+            <div class="details">
+                <ul id="movieDetails"></ul>
+                <div class="plot">
+                    <p><span id="moviePlot"></span></p>
+                </div>
+                <p>Year: <span id="movieYear"></span></p>
+                <p>Genre: <span id="movieGenre"></span></p>
+                <p>Runtime: <span id="movieRuntime"></span></p>
+                <p>Language: <span id="movieLanguage"></span></p>
+                <p>Country: <span id="movieCountry"></span></p>
+                <p>Director: <span id="movieDirector"></span></p>
+                <p>Actors: <span id="movieActors"></span></p>
+                <p>Production: <span id="movieProduction"></span></p>
+                <p>Writer: <span id="movieWriter"></span></p>
+                <p>BoxOffice: <span id="movieBoxOffice"></span></p>
+                <p>Awards: <span id="movieAwards"></span></p>
+                <p>Ratings: <span id="movieRatings"></span></p>
+            </div>
+
+        </div>
+        <div class="no-details-message">
+            <p>Ops! Não encontramos detalhes para esse filme.</p>
+        </div>
+    </section>
+    <button type="button" id="btnVoltar">Voltar</button>
+
+    <script type="module" src="/JS/Detalhes.js"></script>
+</body>
+
+</html>
