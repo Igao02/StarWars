@@ -1,0 +1,115 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+   
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+
+h1 {
+    color: yellow;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#srcMovie {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    width: 400px;
+    background-color: rgba(31, 31, 31, 0.842);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+#movielist {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#movielist li {
+    background-color: rgba(7, 7, 7, 0.938);
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgb(255 255 255 / 36%);
+    text-align: center;
+    font-size: 1.4rem;
+    color: white;
+    width: 48%;
+    box-sizing: border-box;
+}
+
+#movielist li img {
+    width: 80%;
+    height: 350px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px 10px 0 0;
+}
+
+#movielist li a {
+    width: 71%;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: black;
+    color: yellow;
+    text-decoration: none;
+    border-radius: 0 0 10px 10px;
+    transition: background-color 0.3s;
+}
+
+#movielist li a:hover {
+    background-color: grey;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    .search {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #srcMovie {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    #movielist li {
+        width: 100%;  /* Faz com que os filmes ocupem toda a largura em dispositivos móveis */
+        margin-bottom: 10px;
+    }
+
+    #movielist li img {
+        height: auto; /* Mantém a proporção da imagem */
+    }
+}
