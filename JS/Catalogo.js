@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const a = document.createElement('a');
             a.textContent = "Saiba mais";
-            a.href = `detail.html?id=${movie.imdbID}`;
+            a.href = `Detalhes.html?id=${movie.imdbID}`;
             li.appendChild(a);
             movieListElement.appendChild(li);
         });
