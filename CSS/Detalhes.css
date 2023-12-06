@@ -8,7 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
+    height: 1000vh;
     margin: 0;
     color: white;
 }
@@ -24,6 +24,10 @@ body {
     border-radius: 10px;
     margin-bottom: 15px;
     box-shadow: 0 2px 8px rgb(255 255 255 / 36%);
+    text-align: center; /* Adicionado para centralizar o conteúdo horizontalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
@@ -34,7 +38,8 @@ h1 {
 
 .content-wrapper {
     display: flex;
-    align-items: start;
+    flex-direction: column; /* Alterado para exibir a imagem acima do texto */
+    align-items: center;
     gap: 20px;
 }
 
@@ -46,7 +51,7 @@ h1 {
 }
 
 .plot {
-    color: rgb(250, 250, 182);
+    color: aquamarine;
     font-size: 18px;
 }
 
@@ -81,11 +86,6 @@ h1 {
 
     .plot {
         font-size: 16px;
-    }
-
-    .content-wrapper {
-        flex-direction: column;
-        align-items: center;
     }
 
     #moviePoster {
