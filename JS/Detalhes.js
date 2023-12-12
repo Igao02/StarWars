@@ -10,16 +10,10 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("movieTitle").textContent = movieData.Title;
         document.getElementById("moviePoster").src = movieData.Poster;
         document.getElementById("moviePlot").textContent = movieData.Plot;
-        document.getElementById("movieYear").textContent = movieData.Year;
-     
         document.getElementById("movieGenre").textContent = movieData.Genre;
-        document.getElementById("movieRuntime").textContent = movieData.Runtime;
-        document.getElementById("movieLanguage").textContent = movieData.Language;
-        document.getElementById("movieCountry").textContent = movieData.Country;
         document.getElementById("movieDirector").textContent = movieData.Director;
         document.getElementById("movieActors").textContent = movieData.Actors;
         document.getElementById("movieProduction").textContent = movieData.Production;
-        document.getElementById("movieWriter").textContent = movieData.Writer;
         document.getElementById("movieBoxOffice").textContent = movieData.BoxOffice;
         document.getElementById("movieAwards").textContent = movieData.Awards;
         const movieRatings = document.getElementById('movieRatings');
